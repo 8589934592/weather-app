@@ -1,0 +1,20 @@
+@media screen and (max-width: 767px) {
+  div.tablet, div.web {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  div.mobile, div.web {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  div.mobile, div.tablet {
+    display: none;
+  }
+  .container {
+    max-width: 1400px;
+  }
+}

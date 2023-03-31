@@ -1,0 +1,48 @@
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  min-width: 320px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+section {
+  display: none;
+}
+
+input {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 10px;
+  font-weight: 800;
+  text-align: center;
+  color: #6c757d;
+  font-size: 1.25rem;
+}
+
+label:hover {
+  color: #6c757d;
+  cursor: pointer;
+}
+
+input:checked + label {
+  color: #212529;
+  border-bottom: 2px solid #212529;
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab1m:checked ~ #content1m,
+#tab2m:checked ~ #content2m,
+#tab3m:checked ~ #content3m {
+  display: block;
+}
